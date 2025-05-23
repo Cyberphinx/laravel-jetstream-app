@@ -15,3 +15,8 @@ of the Laravel application in a containerized environment.
 ### docker exec -it jetstream_app php artisan migrate
 
 #### For permission issues: chown all files to www-data:www-data inside the docker container
+
+## To build for frontend
+
+### inside docker, run `php artisan jetstream:install livewire` OR `php artisan jetstream:install inertia`
+### inside docker, run npm install and npm run start
