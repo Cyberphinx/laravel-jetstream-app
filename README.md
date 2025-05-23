@@ -7,3 +7,11 @@ Best practices include using environment variables for sensitive data, mapping
 volumes for code and database persistence, and ensuring all necessary PHP
 extensions are installed. This setup allows for easy management and deployment
 of the Laravel application in a containerized environment.
+
+# Start the app
+
+### sudo docker compose up --build --wait -d
+
+### docker exec -it jetstream_app php artisan migrate
+
+#### For permission issues: chown all files to www-data:www-data inside the docker container
